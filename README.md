@@ -61,7 +61,7 @@
   <a href="https://github.com/siddharthskyhub" target="_blank"><img src="https://img.shields.io/badge/Location-Bangalore-007BA7?style=flat-square&logo=google-maps&logoColor=white" alt="Location" /></a>
 </p>
 
-<!-- Animated 8-Bit Pixel Flame Footer Banner -->
+<!-- Coordinated 8-Bit Pixel Flame Footer Banner (8px High-Density Grid) -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/pixel-flame.svg" width="100%" alt="Pixel Flame Animation" />
+  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/pixel-fire.svg" width="100%" alt="Coordinated Pixel Flame Animation" />
 </p>
