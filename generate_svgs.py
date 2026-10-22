@@ -5,6 +5,12 @@ Creates animated SVGs for GitHub profile READMEs inspired by modern developer de
 
 import os
 import sys
+import xml.sax.saxutils as saxutils
+import xml.etree.ElementTree as ET
+
+def xml_escape(text):
+    """Escapes text for XML attribute or text node"""
+    return saxutils.escape(str(text))
 
 def get_theme_palette(theme_name="ocean"):
     themes = {
@@ -35,7 +41,7 @@ def get_theme_palette(theme_name="ocean"):
 
 def create_banner_complete_svg(
     name="Siddharth Kumar",
-    subtitle="GenAI & LLM Enthusiast • Full-Stack Crafter",
+    subtitle="GenAI &amp; LLM Enthusiast &#8226; Full-Stack Crafter",
     breadcrumb="siddharthskyhub / README.md",
     tagline="Turning coffee and chai into clean code",
     portfolio_url="siddharth.dev",
@@ -46,7 +52,9 @@ def create_banner_complete_svg(
 ):
     t = get_theme_palette(theme)
 
-    char_count = max(len(tagline), 1)
+    # Clean plain text for length calculations
+    clean_tagline = tagline.replace("&amp;", "&").replace("&#8226;", "•")
+    char_count = max(len(clean_tagline), 1)
     char_width = 11.9
     text_total_width = char_count * char_width
     center_x = 460
@@ -70,6 +78,10 @@ def create_banner_complete_svg(
     b2_x = b1_x + p_badge_w + gap
     b3_x = b2_x + l_badge_w + gap
     b4_x = b3_x + e_badge_w + gap
+
+    b_parts = breadcrumb.split('/')
+    repo_user = xml_escape(b_parts[0].strip() if len(b_parts) > 0 else 'siddharthskyhub')
+    repo_file = xml_escape(b_parts[1].strip() if len(b_parts) > 1 else 'README.md')
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 405" width="100%" height="100%">
   <defs>
@@ -100,6 +112,7 @@ def create_banner_complete_svg(
     </clipPath>
 
     <style>
+      /* --- Fonts --- */
       .font-mono {{
         font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, 'Courier New', monospace;
       }}
@@ -107,6 +120,7 @@ def create_banner_complete_svg(
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
       }}
 
+      /* --- Wave Motions --- */
       @keyframes waveFlowA {{
         0% {{ transform: translateX(0); }}
         100% {{ transform: translateX(-880px); }}
@@ -132,6 +146,7 @@ def create_banner_complete_svg(
         opacity: 0.85;
       }}
 
+      /* --- Twinkle Star Animation --- */
       @keyframes twinkle {{
         0%, 100% {{ opacity: 0.15; transform: scale(0.75); }}
         50% {{ opacity: 0.95; transform: scale(1.25); }}
@@ -145,6 +160,7 @@ def create_banner_complete_svg(
       .s3 {{ animation-delay: 2.1s; }}
       .s4 {{ animation-delay: 3.0s; }}
 
+      /* --- Shimmer Beam Sweep --- */
       @keyframes shimmer {{
         0% {{ transform: translateX(-650px) skewX(-20deg); }}
         35% {{ transform: translateX(950px) skewX(-20deg); }}
@@ -154,6 +170,7 @@ def create_banner_complete_svg(
         animation: shimmer 8s ease-in-out infinite;
       }}
 
+      /* --- Subtle Breathing for Title --- */
       @keyframes softBreath {{
         0%, 100% {{ transform: translateY(0); }}
         50% {{ transform: translateY(-1.5px); }}
@@ -162,6 +179,7 @@ def create_banner_complete_svg(
         animation: softBreath 4.5s ease-in-out infinite;
       }}
 
+      /* --- Typewriter &amp; Cursor Animation --- */
       @keyframes typeTyping {{
         0% {{ width: 0; }}
         42% {{ width: {int(text_total_width + 12)}px; }}
@@ -211,9 +229,9 @@ def create_banner_complete_svg(
     <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8V1.5z"
           fill="#7D8590" transform="translate(0, -11) scale(0.9)" />
     <text x="20" y="0" font-size="13" font-weight="500" letter-spacing="0.2">
-      <tspan fill="#C9D1D9">{breadcrumb.split('/')[0].strip()} </tspan>
+      <tspan fill="#C9D1D9">{repo_user} </tspan>
       <tspan fill="#484F58">/</tspan>
-      <tspan fill="#8B949E"> {breadcrumb.split('/')[1].strip() if '/' in breadcrumb else 'README.md'}</tspan>
+      <tspan fill="#8B949E"> {repo_file}</tspan>
     </text>
   </g>
 
@@ -255,7 +273,7 @@ def create_banner_complete_svg(
     <!-- Polished Border -->
     <rect x="20" y="44" width="880" height="215" rx="14" ry="14" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
 
-    <!-- Hero Title & Subtitle -->
+    <!-- Hero Title &amp; Subtitle -->
     <g class="hero-title">
       <text class="font-sans" x="460" y="138" text-anchor="middle"
             font-size="44" font-weight="800" fill="{t['title_color']}" letter-spacing="-0.5"
@@ -277,7 +295,7 @@ def create_banner_complete_svg(
       <text class="font-mono" x="460" y="303" text-anchor="middle"
             font-size="19" font-weight="600" fill="{t['tagline_color']}" letter-spacing="0.5"
             filter="drop-shadow(0 0 10px {t['tagline_color']}55)">
-        {tagline}
+        {xml_escape(clean_tagline)}
       </text>
     </g>
 
@@ -302,7 +320,7 @@ def create_banner_complete_svg(
       <text class="font-sans" x="35" y="18" font-size="11.5" font-weight="600" fill="#E6EDF3">Portfolio</text>
       
       <rect x="74" y="0" width="{p_val_w}" height="28" rx="6" fill="{t['portfolio_bg']}" />
-      <text class="font-sans" x="{74 + p_val_w/2}" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="{t['portfolio_text']}">{portfolio_url}</text>
+      <text class="font-sans" x="{74 + p_val_w/2}" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="{t['portfolio_text']}">{xml_escape(portfolio_url)}</text>
     </g>
 
     <!-- Badge 2: LinkedIn -->
@@ -315,7 +333,7 @@ def create_banner_complete_svg(
       <text class="font-sans" x="34" y="18" font-size="11.5" font-weight="600" fill="#E6EDF3">LinkedIn</text>
       
       <rect x="74" y="0" width="{l_val_w}" height="28" rx="6" fill="{t['linkedin_bg']}" />
-      <text class="font-sans" x="{74 + l_val_w/2}" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="{t['linkedin_text']}">{linkedin_text}</text>
+      <text class="font-sans" x="{74 + l_val_w/2}" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="{t['linkedin_text']}">{xml_escape(linkedin_text)}</text>
     </g>
 
     <!-- Badge 3: Email -->
@@ -328,7 +346,7 @@ def create_banner_complete_svg(
       <text class="font-sans" x="31" y="18" font-size="11.5" font-weight="600" fill="#E6EDF3">Email</text>
       
       <rect x="64" y="0" width="{e_val_w}" height="28" rx="6" fill="{t['email_bg']}" />
-      <text class="font-sans" x="{64 + e_val_w/2}" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="{t['email_text']}">{email_text}</text>
+      <text class="font-sans" x="{64 + e_val_w/2}" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="{t['email_text']}">{xml_escape(email_text)}</text>
     </g>
 
     <!-- Badge 4: Location -->
@@ -341,7 +359,7 @@ def create_banner_complete_svg(
       <text class="font-sans" x="31" y="18" font-size="11.5" font-weight="600" fill="#E6EDF3">Location</text>
       
       <rect x="70" y="0" width="{loc_val_w}" height="28" rx="6" fill="{t['location_bg']}" />
-      <text class="font-sans" x="{70 + loc_val_w/2}" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="{t['location_text']}">{location_text}</text>
+      <text class="font-sans" x="{70 + loc_val_w/2}" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="{t['location_text']}">{xml_escape(location_text)}</text>
     </g>
 
   </g>
@@ -350,7 +368,7 @@ def create_banner_complete_svg(
 
 def create_banner_only_svg(
     name="Siddharth Kumar",
-    subtitle="GenAI & LLM Enthusiast • Full-Stack Crafter",
+    subtitle="GenAI &amp; LLM Enthusiast &#8226; Full-Stack Crafter",
     theme="ocean"
 ):
     t = get_theme_palette(theme)
@@ -464,7 +482,8 @@ def create_banner_only_svg(
     return svg
 
 def create_tagline_svg(tagline="Turning coffee and chai into clean code", color="#FF758F"):
-    char_count = max(len(tagline), 1)
+    clean_tagline = tagline.replace("&amp;", "&").replace("&#8226;", "•")
+    char_count = max(len(clean_tagline), 1)
     char_width = 11.9
     text_total_width = char_count * char_width
     center_x = 440
@@ -513,7 +532,7 @@ def create_tagline_svg(tagline="Turning coffee and chai into clean code", color=
     <text class="font-mono" x="440" y="32" text-anchor="middle"
           font-size="19" font-weight="600" fill="{color}" letter-spacing="0.5"
           filter="drop-shadow(0 0 10px {color}55)">
-      {tagline}
+      {xml_escape(clean_tagline)}
     </text>
   </g>
 
@@ -526,14 +545,21 @@ def create_tagline_svg(tagline="Turning coffee and chai into clean code", color=
     return svg
 
 def main():
-    print("Regenerating tailored profile SVGs for Siddharth Kumar...")
+    print("Generating strictly validated XML SVGs...")
+    b_comp = create_banner_complete_svg()
+    b_only = create_banner_only_svg()
+    t_only = create_tagline_svg()
+
     with open("banner-complete.svg", "w", encoding="utf-8") as f:
-        f.write(create_banner_complete_svg())
+        f.write(b_comp)
     with open("banner.svg", "w", encoding="utf-8") as f:
-        f.write(create_banner_only_svg())
+        f.write(b_only)
     with open("tagline.svg", "w", encoding="utf-8") as f:
-        f.write(create_tagline_svg())
-    print("Done!")
+        f.write(t_only)
+
+    for fname in ["banner-complete.svg", "banner.svg", "tagline.svg"]:
+        ET.parse(fname)
+        print(f"VERIFIED VALID: {fname}")
 
 if __name__ == "__main__":
     main()

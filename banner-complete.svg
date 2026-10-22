@@ -27,6 +27,7 @@
     </clipPath>
 
     <style>
+      /* --- Fonts --- */
       .font-mono {
         font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, 'Courier New', monospace;
       }
@@ -34,6 +35,7 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
       }
 
+      /* --- Wave Motions --- */
       @keyframes waveFlowA {
         0% { transform: translateX(0); }
         100% { transform: translateX(-880px); }
@@ -59,6 +61,7 @@
         opacity: 0.85;
       }
 
+      /* --- Twinkle Star Animation --- */
       @keyframes twinkle {
         0%, 100% { opacity: 0.15; transform: scale(0.75); }
         50% { opacity: 0.95; transform: scale(1.25); }
@@ -72,6 +75,7 @@
       .s3 { animation-delay: 2.1s; }
       .s4 { animation-delay: 3.0s; }
 
+      /* --- Shimmer Beam Sweep --- */
       @keyframes shimmer {
         0% { transform: translateX(-650px) skewX(-20deg); }
         35% { transform: translateX(950px) skewX(-20deg); }
@@ -81,6 +85,7 @@
         animation: shimmer 8s ease-in-out infinite;
       }
 
+      /* --- Subtle Breathing for Title --- */
       @keyframes softBreath {
         0%, 100% { transform: translateY(0); }
         50% { transform: translateY(-1.5px); }
@@ -89,6 +94,7 @@
         animation: softBreath 4.5s ease-in-out infinite;
       }
 
+      /* --- Typewriter &amp; Cursor Animation --- */
       @keyframes typeTyping {
         0% { width: 0; }
         42% { width: 476px; }
@@ -182,7 +188,7 @@
     <!-- Polished Border -->
     <rect x="20" y="44" width="880" height="215" rx="14" ry="14" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" />
 
-    <!-- Hero Title & Subtitle -->
+    <!-- Hero Title &amp; Subtitle -->
     <g class="hero-title">
       <text class="font-sans" x="460" y="138" text-anchor="middle"
             font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5"
@@ -193,7 +199,7 @@
       <text class="font-sans" x="460" y="176" text-anchor="middle"
             font-size="18" font-weight="500" fill="#E0F2FE" letter-spacing="0.4"
             filter="drop-shadow(0 2px 6px rgba(0,0,0,0.3))">
-        GenAI & LLM Enthusiast • Full-Stack Crafter
+        GenAI &amp; LLM Enthusiast &#8226; Full-Stack Crafter
       </text>
     </g>
   </g>
