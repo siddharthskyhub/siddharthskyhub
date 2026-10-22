@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- Animated Header Banner: Jet Black #0A0A0A | Cerulean Blue #007BA7 | Neon Rose #FF2095 -->
-  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/banner-neon.svg" width="100%" alt="Siddharth Kumar - GitHub Banner" />
+  <!-- Next-Gen Cyber Deck Terminal Banner with 4 Rotating Slogans -->
+  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/banner-cyber.svg" width="100%" alt="Siddharth Kumar - Cyber Banner" />
 
 </div>
 
@@ -14,7 +14,7 @@
 - 🔭 **Focus:** Building practical AI applications with Python, LangChain, RAG architectures & Streamlit.
 - 🌱 **Exploring:** Advanced agentic workflows, deep learning architectures & scalable web services.
 - 💬 **Ask me about:** Generative AI, LLMs, RAG pipelines, Python, and Full-Stack Engineering.
-- ⚡ **Fun fact:** Turning coffee and chai into clean code!
+- ⚡ **Fun fact:** Powered by chai, driven by curiosity!
 
 ---
 
