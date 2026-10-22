@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- Animated Header Banner -->
-  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/banner-bangalore.svg" width="100%" alt="Siddharth Kumar - GitHub Banner" />
+  <!-- Animated Header Banner: Jet Black #0A0A0A | Cerulean Blue #007BA7 | Neon Rose #FF2095 -->
+  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/banner-neon.svg" width="100%" alt="Siddharth Kumar - GitHub Banner" />
 
 </div>
 
@@ -42,12 +42,12 @@
 ### 📊 GitHub Activity & Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=siddharthskyhub&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00A8CC&text_color=E6EDF3&icon_color=00A8CC" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siddharthskyhub&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00A8CC&text_color=E6EDF3" height="165" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=siddharthskyhub&show_icons=true&theme=tokyonight&hide_border=false&border_color=007BA7&bg_color=0A0A0A&title_color=FF2095&text_color=E6EDF3&icon_color=007BA7" height="165" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siddharthskyhub&layout=compact&theme=tokyonight&hide_border=false&border_color=007BA7&bg_color=0A0A0A&title_color=FF2095&text_color=E6EDF3" height="165" alt="Top Languages" />
 </div>
 
 <div align="center" style="margin-top: 10px;">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=siddharthskyhub&theme=tokyonight&hide_border=true&background=0D1117&ring=00A8CC&fire=FF758F&currStreakLabel=00A8CC" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=siddharthskyhub&theme=tokyonight&hide_border=false&border=007BA7&background=0A0A0A&ring=007BA7&fire=FF2095&currStreakLabel=FF2095" alt="GitHub Streak" />
 </div>
 
 ---
@@ -55,12 +55,12 @@
 ### 📬 Connect With Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/siddharth-kumar-01a1ba296/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://github.com/siddharthskyhub" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="mailto:149592035+siddharthskyhub@users.noreply.github.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/siddharthskyhub" target="_blank"><img src="https://img.shields.io/badge/Location-Bangalore-86efac?style=flat-square&logo=google-maps&logoColor=064e3b" alt="Location" /></a>
+  <a href="https://www.linkedin.com/in/siddharth-kumar-01a1ba296/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-007BA7?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/siddharthskyhub" target="_blank"><img src="https://img.shields.io/badge/GitHub-0A0A0A?style=flat-square&logo=github&logoColor=FF2095" alt="GitHub" /></a>
+  <a href="mailto:149592035+siddharthskyhub@users.noreply.github.com"><img src="https://img.shields.io/badge/Email-FF2095?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/siddharthskyhub" target="_blank"><img src="https://img.shields.io/badge/Location-Bangalore-007BA7?style=flat-square&logo=google-maps&logoColor=white" alt="Location" /></a>
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0077b6&height=80&section=footer" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=007BA7&height=80&section=footer" width="100%"/>
 </p>
