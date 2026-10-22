@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Animated Header Banner -->
-  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/banner-complete.svg" width="100%" alt="Siddharth Kumar - GitHub Banner" />
+  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/profile-banner.svg" width="100%" alt="Siddharth Kumar - GitHub Banner" />
 
   <br/><br/>
 
