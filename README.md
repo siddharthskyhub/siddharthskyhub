@@ -1,23 +1,7 @@
 <div align="center">
 
   <!-- Animated Header Banner -->
-  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/profile-banner.svg" width="100%" alt="Siddharth Kumar - GitHub Banner" />
-
-  <br/><br/>
-
-  <!-- Interactive Badges & Links -->
-  <p align="center">
-    <a href="https://github.com/siddharthskyhub" target="_blank">
-      <img src="https://img.shields.io/badge/Portfolio-siddharth.dev-c4b5fd?style=for-the-badge&logo=google-chrome&logoColor=3b0764" alt="Portfolio" />
-    </a>
-    <a href="https://www.linkedin.com/in/siddharth-kumar-01a1ba296/" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-Let's%20Connect-93c5fd?style=for-the-badge&logo=linkedin&logoColor=1e3a8a" alt="LinkedIn" />
-    </a>
-    <a href="mailto:149592035+siddharthskyhub@users.noreply.github.com" target="_blank">
-      <img src="https://img.shields.io/badge/Email-Say%20Hello-fda4af?style=for-the-badge&logo=gmail&logoColor=881337" alt="Email" />
-    </a>
-    <img src="https://img.shields.io/badge/Location-India-86efac?style=for-the-badge&logo=google-maps&logoColor=064e3b" alt="Location" />
-  </p>
+  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/banner-bangalore.svg" width="100%" alt="Siddharth Kumar - GitHub Banner" />
 
 </div>
 
@@ -25,21 +9,11 @@
 
 ### 👨‍💻 About Me
 
-```python
-class Developer:
-    def __init__(self):
-        self.name = "Siddharth Kumar"
-        self.role = "CS Engineer | GenAI & LLM Enthusiast"
-        self.focus = ["Generative AI", "Retrieval-Augmented Generation (RAG)", "Full-Stack Web Apps"]
-        self.fuel = ["Coffee ☕", "Chai 🫖", "Curiosity 🚀"]
+👋 Hi! I'm **Siddharth Kumar**, a **Computer Science Engineer** and **GenAI & LLM Enthusiast** based in **Bangalore, India** 📍
 
-    def current_mission(self):
-        return "Building practical AI applications with Python, RAG & Streamlit."
-```
-
-- 🔭 **Focus:** Building practical AI applications with Python, LangChain, RAG & Streamlit.
-- 🌱 **Exploring:** Deep learning architectures, advanced agentic workflows & scalable web services.
-- 💬 **Ask me about:** Python, GenAI, LLMs, RAG, Streamlit, and Full-Stack Engineering.
+- 🔭 **Focus:** Building practical AI applications with Python, LangChain, RAG architectures & Streamlit.
+- 🌱 **Exploring:** Advanced agentic workflows, deep learning architectures & scalable web services.
+- 💬 **Ask me about:** Generative AI, LLMs, RAG pipelines, Python, and Full-Stack Engineering.
 - ⚡ **Fun fact:** Turning coffee and chai into clean code!
 
 ---
@@ -84,6 +58,7 @@ class Developer:
   <a href="https://www.linkedin.com/in/siddharth-kumar-01a1ba296/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://github.com/siddharthskyhub" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="mailto:149592035+siddharthskyhub@users.noreply.github.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/siddharthskyhub" target="_blank"><img src="https://img.shields.io/badge/Location-Bangalore-86efac?style=flat-square&logo=google-maps&logoColor=064e3b" alt="Location" /></a>
 </p>
 
 <p align="center">

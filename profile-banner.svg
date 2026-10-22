@@ -225,7 +225,7 @@
   <g transform="translate(0, 338)">
     
     <!-- Badge 1: Portfolio -->
-    <g class="badge-item" transform="translate(105, 0)">
+    <g class="badge-item" transform="translate(90, 0)">
       <rect x="0" y="0" width="78" height="28" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
       <g transform="translate(10, 6) scale(0.68)">
         <circle cx="12" cy="12" r="10" stroke="#38BDF8" stroke-width="2" fill="none" />
@@ -239,7 +239,7 @@
     </g>
 
     <!-- Badge 2: LinkedIn -->
-    <g class="badge-item" transform="translate(312, 0)">
+    <g class="badge-item" transform="translate(297, 0)">
       <rect x="0" y="0" width="78" height="28" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
       <g transform="translate(11, 6) scale(0.68)">
         <rect x="0" y="1" width="22" height="22" rx="4" fill="#0A66C2" />
@@ -252,7 +252,7 @@
     </g>
 
     <!-- Badge 3: Email -->
-    <g class="badge-item" transform="translate(519, 0)">
+    <g class="badge-item" transform="translate(504, 0)">
       <rect x="0" y="0" width="68" height="28" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
       <g transform="translate(10, 6) scale(0.65)">
         <rect x="2" y="4" width="20" height="16" rx="2" stroke="#F43F5E" stroke-width="2" fill="none" />
@@ -265,7 +265,7 @@
     </g>
 
     <!-- Badge 4: Location -->
-    <g class="badge-item" transform="translate(686, 0)">
+    <g class="badge-item" transform="translate(671, 0)">
       <rect x="0" y="0" width="74" height="28" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1" />
       <g transform="translate(11, 6) scale(0.68)">
         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EF4444" />
@@ -273,8 +273,8 @@
       </g>
       <text class="font-sans" x="31" y="18" font-size="11.5" font-weight="600" fill="#E6EDF3">Location</text>
       
-      <rect x="70" y="0" width="55" height="28" rx="6" fill="#86EFAC" />
-      <text class="font-sans" x="97.5" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="#064E3B">India</text>
+      <rect x="70" y="0" width="85" height="28" rx="6" fill="#86EFAC" />
+      <text class="font-sans" x="112.5" y="18" text-anchor="middle" font-size="11.5" font-weight="700" fill="#064E3B">Bangalore</text>
     </g>
 
   </g>

@@ -47,7 +47,7 @@ def create_banner_complete_svg(
     portfolio_url="siddharth.dev",
     linkedin_text="Let's Connect",
     email_text="Say Hello",
-    location_text="India",
+    location_text="Bangalore",
     theme="ocean"
 ):
     t = get_theme_palette(theme)
@@ -552,12 +552,14 @@ def main():
 
     with open("banner-complete.svg", "w", encoding="utf-8") as f:
         f.write(b_comp)
+    with open("profile-banner.svg", "w", encoding="utf-8") as f:
+        f.write(b_comp)
     with open("banner.svg", "w", encoding="utf-8") as f:
         f.write(b_only)
     with open("tagline.svg", "w", encoding="utf-8") as f:
         f.write(t_only)
 
-    for fname in ["banner-complete.svg", "banner.svg", "tagline.svg"]:
+    for fname in ["banner-complete.svg", "profile-banner.svg", "banner.svg", "tagline.svg"]:
         ET.parse(fname)
         print(f"VERIFIED VALID: {fname}")
 
