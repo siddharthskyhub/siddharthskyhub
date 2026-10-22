@@ -1,0 +1,495 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 928 180" width="100%" height="100%">
+  <defs>
+    <style>
+      /* Retro 8-bit Stepped Arcade Fire Animation */
+      @keyframes flameFlickerA {
+        0%, 100% { transform: translateY(0); }
+        33% { transform: translateY(-16px); }
+        66% { transform: translateY(16px); }
+      }
+      @keyframes flameFlickerB {
+        0%, 100% { transform: translateY(-16px); }
+        40% { transform: translateY(0); }
+        80% { transform: translateY(16px); }
+      }
+      @keyframes flameFlickerC {
+        0%, 100% { transform: translateY(16px); }
+        50% { transform: translateY(-16px); }
+        75% { transform: translateY(0); }
+      }
+
+      /* Rising Embers &amp; Sparks */
+      @keyframes emberAscend1 {
+        0% { transform: translate(0, 0); opacity: 1; }
+        40% { transform: translate(16px, -32px); opacity: 0.9; }
+        80% { transform: translate(0, -64px); opacity: 0.5; }
+        100% { transform: translate(16px, -80px); opacity: 0; }
+      }
+      @keyframes emberAscend2 {
+        0% { transform: translate(0, 0); opacity: 1; }
+        35% { transform: translate(-16px, -24px); opacity: 0.95; }
+        70% { transform: translate(0, -56px); opacity: 0.6; }
+        100% { transform: translate(-16px, -76px); opacity: 0; }
+      }
+      @keyframes emberAscend3 {
+        0% { transform: translate(0, 0); opacity: 1; }
+        50% { transform: translate(16px, -40px); opacity: 0.8; }
+        100% { transform: translate(32px, -88px); opacity: 0; }
+      }
+
+      .flicker-1 { animation: flameFlickerA 0.45s steps(2, start) infinite; }
+      .flicker-2 { animation: flameFlickerB 0.55s steps(2, start) infinite; }
+      .flicker-3 { animation: flameFlickerC 0.50s steps(2, start) infinite; }
+
+      .ember-a { animation: emberAscend1 1.4s steps(5, start) infinite; }
+      .ember-b { animation: emberAscend2 1.7s steps(6, start) infinite 0.3s; }
+      .ember-c { animation: emberAscend3 1.5s steps(5, start) infinite 0.7s; }
+      .ember-d { animation: emberAscend1 1.6s steps(5, start) infinite 1.0s; }
+      .ember-e { animation: emberAscend2 1.8s steps(6, start) infinite 0.5s; }
+      .ember-f { animation: emberAscend3 1.3s steps(5, start) infinite 0.2s; }
+
+      .px-cell {
+        stroke: #1A0505;
+        stroke-width: 0.8;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Canvas Background (Jet Black #0A0A0A) -->
+  <rect width="928" height="180" fill="#0A0A0A" rx="8" />
+
+  <!-- Solid Fire Bed Base (Anchored) -->
+  <g>
+    <rect class="px-cell" x="0" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="0" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="0" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="16" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="16" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="16" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="32" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="32" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="32" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="48" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="48" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="48" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="64" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="64" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="64" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="80" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="80" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="80" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="96" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="96" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="96" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="112" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="112" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="112" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="128" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="128" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="128" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="144" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="144" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="144" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="160" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="160" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="160" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="176" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="176" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="176" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="192" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="192" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="192" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="208" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="208" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="208" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="224" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="224" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="224" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="240" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="240" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="240" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="256" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="256" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="256" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="272" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="272" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="272" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="288" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="288" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="288" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="304" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="304" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="304" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="320" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="320" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="320" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="336" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="336" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="336" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="352" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="352" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="352" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="368" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="368" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="368" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="384" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="384" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="384" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="400" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="400" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="400" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="416" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="416" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="416" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="432" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="432" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="432" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="448" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="448" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="448" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="464" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="464" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="464" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="480" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="480" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="480" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="496" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="496" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="496" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="512" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="512" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="512" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="528" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="528" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="528" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="544" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="544" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="544" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="560" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="560" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="560" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="576" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="576" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="576" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="592" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="592" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="592" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="608" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="608" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="608" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="624" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="624" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="624" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="640" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="640" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="640" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="656" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="656" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="656" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="672" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="672" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="672" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="688" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="688" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="688" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="704" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="704" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="704" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="720" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="720" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="720" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="736" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="736" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="736" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="752" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="752" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="752" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="768" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="768" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="768" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="784" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="784" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="784" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="800" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="800" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="800" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="816" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="816" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="816" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="832" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="832" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="832" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="848" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="848" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="848" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="864" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="864" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="864" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="880" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="880" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="880" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="896" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="896" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="896" y="132" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="912" y="164" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="912" y="148" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="912" y="132" width="16" height="16" fill="#FF6000" />
+  </g>
+
+  <!-- Animated Tongue Group 1 -->
+  <g class="flicker-1">
+    <rect class="px-cell" x="0" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="16" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="16" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="32" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="32" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="96" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="96" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="160" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="160" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="160" y="84" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="160" y="68" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="160" y="52" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="160" y="36" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="160" y="20" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="176" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="176" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="176" y="84" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="176" y="68" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="176" y="52" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="176" y="36" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="192" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="192" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="192" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="192" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="288" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="304" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="304" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="304" y="84" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="368" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="368" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="368" y="84" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="384" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="384" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="448" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="448" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="448" y="84" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="448" y="68" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="448" y="52" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="448" y="36" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="448" y="20" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="464" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="464" y="100" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="464" y="84" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="464" y="68" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="464" y="52" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="544" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="544" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="544" y="84" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="560" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="656" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="656" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="672" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="752" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="768" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="768" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="848" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="848" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="864" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="912" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="912" y="100" width="16" height="16" fill="#8E0E18" />
+  </g>
+
+  <!-- Animated Tongue Group 2 -->
+  <g class="flicker-2">
+    <rect class="px-cell" x="48" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="48" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="48" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="48" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="64" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="64" y="100" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="64" y="84" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="64" y="68" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="64" y="52" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="80" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="80" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="80" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="80" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="208" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="208" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="224" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="320" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="320" y="100" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="320" y="84" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="320" y="68" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="320" y="52" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="336" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="336" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="336" y="84" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="336" y="68" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="336" y="52" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="336" y="36" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="352" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="352" y="100" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="352" y="84" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="352" y="68" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="352" y="52" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="480" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="480" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="480" y="84" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="496" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="576" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="576" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="576" y="84" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="592" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="592" y="100" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="592" y="84" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="592" y="68" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="592" y="52" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="608" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="608" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="608" y="84" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="608" y="68" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="608" y="52" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="608" y="36" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="608" y="20" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="688" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="688" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="688" y="84" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="704" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="704" y="100" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="704" y="84" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="704" y="68" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="704" y="52" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="784" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="784" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="784" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="784" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="800" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="800" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="800" y="84" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="800" y="68" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="800" y="52" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="800" y="36" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="880" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="880" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="896" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="896" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="896" y="84" width="16" height="16" fill="#8E0E18" />
+  </g>
+
+  <!-- Animated Tongue Group 3 -->
+  <g class="flicker-3">
+    <rect class="px-cell" x="112" y="116" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="128" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="128" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="128" y="84" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="144" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="144" y="100" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="144" y="84" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="144" y="68" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="144" y="52" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="240" y="116" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="240" y="100" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="240" y="84" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="256" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="256" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="256" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="256" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="272" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="272" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="400" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="400" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="400" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="400" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="416" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="416" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="416" y="84" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="416" y="68" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="416" y="52" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="416" y="36" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="432" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="432" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="432" y="84" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="432" y="68" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="432" y="52" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="432" y="36" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="432" y="20" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="432" y="4" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="512" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="512" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="528" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="528" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="528" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="528" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="624" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="624" y="100" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="624" y="84" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="624" y="68" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="624" y="52" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="624" y="36" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="640" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="640" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="640" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="640" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="720" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="720" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="720" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="720" y="68" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="736" y="116" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="736" y="100" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="816" y="116" width="16" height="16" fill="#FFD000" />
+    <rect class="px-cell" x="816" y="100" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="816" y="84" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="816" y="68" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="816" y="52" width="16" height="16" fill="#8E0E18" />
+    <rect class="px-cell" x="832" y="116" width="16" height="16" fill="#FF9E00" />
+    <rect class="px-cell" x="832" y="100" width="16" height="16" fill="#FF6000" />
+    <rect class="px-cell" x="832" y="84" width="16" height="16" fill="#D82020" />
+    <rect class="px-cell" x="832" y="68" width="16" height="16" fill="#8E0E18" />
+  </g>
+
+  <!-- Floating Rising Pixel Embers -->
+  <g>
+    <g class="ember-a">
+      <rect class="px-cell" x="64" y="20" width="16" height="16" fill="#8E0E18" />
+    </g>
+    <g class="ember-b">
+      <rect class="px-cell" x="160" y="-12" width="16" height="16" fill="#D82020" />
+    </g>
+    <g class="ember-c">
+      <rect class="px-cell" x="176" y="-28" width="16" height="16" fill="#FF6000" />
+    </g>
+    <g class="ember-d">
+      <rect class="px-cell" x="336" y="4" width="16" height="16" fill="#8E0E18" />
+    </g>
+    <g class="ember-e">
+      <rect class="px-cell" x="432" y="-28" width="16" height="16" fill="#D82020" />
+    </g>
+    <g class="ember-f">
+      <rect class="px-cell" x="448" y="-44" width="16" height="16" fill="#FF9E00" />
+    </g>
+    <g class="ember-a">
+      <rect class="px-cell" x="608" y="-12" width="16" height="16" fill="#D82020" />
+    </g>
+    <g class="ember-b">
+      <rect class="px-cell" x="624" y="-28" width="16" height="16" fill="#8E0E18" />
+    </g>
+    <g class="ember-c">
+      <rect class="px-cell" x="704" y="20" width="16" height="16" fill="#FF6000" />
+    </g>
+    <g class="ember-d">
+      <rect class="px-cell" x="800" y="4" width="16" height="16" fill="#D82020" />
+    </g>
+    <g class="ember-e">
+      <rect class="px-cell" x="816" y="-12" width="16" height="16" fill="#8E0E18" />
+    </g>
+    <g class="ember-f">
+      <rect class="px-cell" x="256" y="36" width="16" height="16" fill="#D82020" />
+    </g>
+    <g class="ember-a">
+      <rect class="px-cell" x="528" y="36" width="16" height="16" fill="#FF6000" />
+    </g>
+  </g>
+
+</svg>
