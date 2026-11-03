@@ -32,7 +32,7 @@ def generate_cyber_deck_svg():
     # Start X coordinates for centering each slogan
     start_xs = [int(center_x - (w / 2)) for w in char_widths]
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="100%">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 920 440" width="100%" height="100%">
   <defs>
     <!-- Dark Jet Black Gradient Background -->
     <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -474,48 +474,56 @@ def generate_cyber_deck_svg():
   <g transform="translate(0, 355)">
     
     <!-- Badge 1: Portfolio (Cerulean Accent) -->
-    <g class="cyber-badge" transform="translate(62, 0)">
-      <polygon points="10,0 185,0 175,32 0,32" fill="#0A0A0A" stroke="#007BA7" stroke-width="1.4" />
-      <g transform="translate(16, 8) scale(0.68)">
-        <circle cx="12" cy="12" r="10" stroke="#007BA7" stroke-width="2" fill="none" />
-        <line x1="2" y1="12" x2="22" y2="12" stroke="#007BA7" stroke-width="2" />
+    <a href="https://portfolio-siddharthskyhub.vercel.app" xlink:href="https://portfolio-siddharthskyhub.vercel.app" target="_blank">
+      <g class="cyber-badge" transform="translate(12, 0)">
+        <polygon points="10,0 335,0 325,32 0,32" fill="#0A0A0A" stroke="#007BA7" stroke-width="1.4" />
+        <g transform="translate(14, 8) scale(0.68)">
+          <circle cx="12" cy="12" r="10" stroke="#007BA7" stroke-width="2" fill="none" />
+          <line x1="2" y1="12" x2="22" y2="12" stroke="#007BA7" stroke-width="2" />
+        </g>
+        <text class="font-mono" x="35" y="20" font-size="10.5" font-weight="700" fill="#FFFFFF">PORTFOLIO</text>
+        <text class="font-mono" x="105" y="20" font-size="9.6" font-weight="800" fill="#007BA7">portfolio-siddharthskyhub.vercel.app</text>
       </g>
-      <text class="font-mono" x="38" y="20" font-size="11" font-weight="700" fill="#FFFFFF">PORTFOLIO</text>
-      <text class="font-mono" x="110" y="20" font-size="11" font-weight="800" fill="#007BA7">siddharth.dev</text>
-    </g>
+    </a>
 
     <!-- Badge 2: LinkedIn (Neon Rose Accent) -->
-    <g class="cyber-badge" transform="translate(262, 0)">
-      <polygon points="10,0 195,0 185,32 0,32" fill="#0A0A0A" stroke="#FF2095" stroke-width="1.4" />
-      <g transform="translate(16, 7) scale(0.68)">
-        <rect x="0" y="1" width="22" height="22" rx="4" fill="#FF2095" />
-        <text class="font-sans" x="11" y="17" text-anchor="middle" font-size="15" font-weight="bold" fill="#0A0A0A">in</text>
+    <a href="https://www.linkedin.com/in/siddharth-kumar-01a1ba296/" xlink:href="https://www.linkedin.com/in/siddharth-kumar-01a1ba296/" target="_blank">
+      <g class="cyber-badge" transform="translate(359, 0)">
+        <polygon points="10,0 180,0 170,32 0,32" fill="#0A0A0A" stroke="#FF2095" stroke-width="1.4" />
+        <g transform="translate(14, 7) scale(0.68)">
+          <rect x="0" y="1" width="22" height="22" rx="4" fill="#FF2095" />
+          <text class="font-sans" x="11" y="17" text-anchor="middle" font-size="15" font-weight="bold" fill="#0A0A0A">in</text>
+        </g>
+        <text class="font-mono" x="35" y="20" font-size="10.5" font-weight="700" fill="#FFFFFF">LINKEDIN</text>
+        <text class="font-mono" x="96" y="20" font-size="10.5" font-weight="800" fill="#FF2095">Let's Connect</text>
       </g>
-      <text class="font-mono" x="38" y="20" font-size="11" font-weight="700" fill="#FFFFFF">LINKEDIN</text>
-      <text class="font-mono" x="105" y="20" font-size="11" font-weight="800" fill="#FF2095">Let's Connect</text>
-    </g>
+    </a>
 
     <!-- Badge 3: Email (Cerulean Accent) -->
-    <g class="cyber-badge" transform="translate(472, 0)">
-      <polygon points="10,0 175,0 165,32 0,32" fill="#0A0A0A" stroke="#007BA7" stroke-width="1.4" />
-      <g transform="translate(16, 7) scale(0.68)">
-        <rect x="2" y="4" width="20" height="16" rx="2" stroke="#007BA7" stroke-width="2" fill="none" />
-        <polyline points="2,6 12,14 22,6" stroke="#007BA7" stroke-width="2" fill="none" />
+    <a href="mailto:149592035+siddharthskyhub@users.noreply.github.com" xlink:href="mailto:149592035+siddharthskyhub@users.noreply.github.com" target="_blank">
+      <g class="cyber-badge" transform="translate(551, 0)">
+        <polygon points="10,0 165,0 155,32 0,32" fill="#0A0A0A" stroke="#007BA7" stroke-width="1.4" />
+        <g transform="translate(14, 7) scale(0.68)">
+          <rect x="2" y="4" width="20" height="16" rx="2" stroke="#007BA7" stroke-width="2" fill="none" />
+          <polyline points="2,6 12,14 22,6" stroke="#007BA7" stroke-width="2" fill="none" />
+        </g>
+        <text class="font-mono" x="35" y="20" font-size="10.5" font-weight="700" fill="#FFFFFF">EMAIL</text>
+        <text class="font-mono" x="78" y="20" font-size="10.5" font-weight="800" fill="#007BA7">Say Hello</text>
       </g>
-      <text class="font-mono" x="38" y="20" font-size="11" font-weight="700" fill="#FFFFFF">EMAIL</text>
-      <text class="font-mono" x="85" y="20" font-size="11" font-weight="800" fill="#007BA7">Say Hello</text>
-    </g>
+    </a>
 
     <!-- Badge 4: Location (Neon Rose Accent) -->
-    <g class="cyber-badge" transform="translate(662, 0)">
-      <polygon points="10,0 195,0 185,32 0,32" fill="#0A0A0A" stroke="#FF2095" stroke-width="1.4" />
-      <g transform="translate(16, 7) scale(0.68)">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#FF2095" />
-        <circle cx="12" cy="9" r="2.5" fill="#0A0A0A" />
+    <a href="https://github.com/siddharthskyhub" xlink:href="https://github.com/siddharthskyhub" target="_blank">
+      <g class="cyber-badge" transform="translate(728, 0)">
+        <polygon points="10,0 180,0 170,32 0,32" fill="#0A0A0A" stroke="#FF2095" stroke-width="1.4" />
+        <g transform="translate(14, 7) scale(0.68)">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#FF2095" />
+          <circle cx="12" cy="9" r="2.5" fill="#0A0A0A" />
+        </g>
+        <text class="font-mono" x="35" y="20" font-size="10.5" font-weight="700" fill="#FFFFFF">LOCATION</text>
+        <text class="font-mono" x="98" y="20" font-size="10.5" font-weight="800" fill="#FF2095">Bangalore, IN</text>
       </g>
-      <text class="font-mono" x="38" y="20" font-size="11" font-weight="700" fill="#FFFFFF">LOCATION</text>
-      <text class="font-mono" x="110" y="20" font-size="11" font-weight="800" fill="#FF2095">Bangalore, IN</text>
-    </g>
+    </a>
 
   </g>
 </svg>"""

@@ -17,7 +17,7 @@ def generate_neon_banner(
     subtitle="GenAI &amp; LLM Enthusiast &#8226; Full-Stack Crafter",
     breadcrumb="siddharthskyhub / README.md",
     tagline="Turning coffee and chai into clean code",
-    portfolio_url="siddharth.dev",
+    portfolio_url="portfolio-siddharthskyhub.vercel.app",
     linkedin_text="Let's Connect",
     email_text="Say Hello",
     location_text="Bangalore"

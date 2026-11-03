@@ -1,7 +1,9 @@
 <div align="center">
 
   <!-- Next-Gen Cyber Deck Terminal Banner with 4 Rotating Slogans -->
-  <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/banner-cyber.svg" width="100%" alt="Siddharth Kumar - Cyber Banner" />
+  <a href="https://portfolio-siddharthskyhub.vercel.app" target="_blank">
+    <img src="https://raw.githubusercontent.com/siddharthskyhub/siddharthskyhub/main/banner-cyber.svg" width="100%" alt="Siddharth Kumar - Cyber Banner" />
+  </a>
 
 </div>
 
@@ -55,6 +57,7 @@
 ### 📬 Connect With Me
 
 <p align="center">
+  <a href="https://portfolio-siddharthskyhub.vercel.app" target="_blank"><img src="https://img.shields.io/badge/Portfolio-portfolio--siddharthskyhub.vercel.app-007BA7?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/siddharth-kumar-01a1ba296/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-007BA7?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://github.com/siddharthskyhub" target="_blank"><img src="https://img.shields.io/badge/GitHub-0A0A0A?style=flat-square&logo=github&logoColor=FF2095" alt="GitHub" /></a>
   <a href="mailto:149592035+siddharthskyhub@users.noreply.github.com"><img src="https://img.shields.io/badge/Email-FF2095?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
